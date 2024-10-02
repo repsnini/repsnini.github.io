@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+
+    <style>
+        /* Estilos gerais */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ffffff;
+            padding-left: 220px; /* Espaço para a barra lateral fixa */
+            min-height: 100vh;
+        }
+
+        /* Estilos para a barra lateral fixa */
+        nav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #ebebeb;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove os marcadores das listas */
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffffff; /* Cor de fundo ao passar o mouse sobre o link */
+        }
+
+        .content {
+            margin-left: 220px; /* Espaço para a barra lateral fixa */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        /* Media Queries para dispositivos menores */
+        @media (max-width: 768px) {
+            body {
+                padding-left: 0;
+            }
+
+            nav {
+                width: 100%;
+                height: auto;
+                position: relative;
+                box-shadow: none;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 20px;
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            nav ul li {
+                margin-bottom: 0;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        /* Media Queries para telas menores que 480px */
+        @media (max-width: 480px) {
+            nav ul li a {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Barra lateral fixa com links -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="https://resistencehybe.tumblr.com">Notícias</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <header>
+            <h1>Sobre os Membros</h1>
+        </header>
+        
+        <main>
+            <h2>Membros</h2>
+
+            <h3>Jung Mila</h3>
+            <img src="jessica.jpeg" alt="Jung Mila">
+            <p> - Visual e Lead vocal.</p>
+            <p> - 18 anos.</p>
+            <p> - Nacionalidade: Coreana.</p>
+
+            <h3>Aeri Uiui</h3>
+            <img src="giselle.jpeg" alt="Aeri Uiui">
+            <p> - Lead rapper e Lead dancer.</p>
+            <p> - 17 anos.</p>
+            <p> - Nacionalidade: Japonesa.</p>
+
+            <h3>Kim Rafa</h3>
+            <img src="taehyung.jpeg" alt="Kim Rafa">
+            <p> - Main vocal e Lead dancer.</p>
+            <p> - 18 anos.</p>
+            <p> - Nacionalidade: Coreana.</p>
+
+            <h3>Park Tony</h3>
+            <img src="moka.jpeg" alt="Park Tony">
+            <p> - Maknae.</p>
+            <p> - 14 anos.</p>
+            <p> - Nacionalidade: Coreana-tailandesa.</p>
+
+            <h3>Kim Tinker</h3>
+            <img src="namjoon.jpeg" alt="Kim Tinker">
+            <p> - Main dancer e Sub vocal.</p>
+            <p> - 18 anos.</p>
+            <p> - Nacionalidade: Coreana.</p>
+
+            <h3>Kim Mari</h3>
+            <img src="minji.jpeg" alt="Kim Mari">
+            <p> - Lead vocal e Líder.</p>
+            <p> - 23 anos.</p>
+            <p> - Nacionalidade: Coreana.</p>
+
+            <h3>Park Lali</h3>
+            <img src="jimin.jpeg" alt="Park Lali">
+            <p> - Main vocal e Sub dancer.</p>
+            <p> - 17 anos.</p>
+            <p> - Nacionalidade: Coreana.</p>
+
+            <h3>Son Ester</h3>
+            <img src="wendy.jpeg" alt="Son Ester">
+            <p> - Main vocal e Lead dancer.</p>
+            <p> - 18 anos.</p>
+            <p> - Nacionalidade: Coreana.</p>
+
+            <h3>Min Bea</h3>
+            <img src="yoongi.jpeg" alt="Min Bea">
+            <p> - Main rapper e Sub dancer.</p>
+            <p> - 17 anos.</p>
+            <p> - Nacionalidade: Coreana.</p>
+
+            <h3>Byun Rayla</h3>
+            <img src="baekhyun.jpeg" alt="Byun Rayla">
+            <p> - Lead rapper e Main dancer.</p>
+            <p> - 17 anos.</p>
+            <p> - Nacionalidade: Coreana.</p>
+
+            <h3>Bang Lina</h3>
+            <img src="bang.jpeg" alt="Bang Lina">
+            <p> - Ceo da hybe e criadora do resistence.</p>
+            <p> - 16 anos.</p>
+            <p> - Nacionalidade: Coreana.</p>
+
+            <h3>Album debut</h3>
+            <p> - Scat.</p>
+            <p> - Data: 28/09/2024</p>
+            <p> - Gênero: Kpop.</p>
+        </main>
+    
+        <footer>
+            <p>&copy; sza paraibana</p>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+    <style>
+        /* Estilos gerais */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ffffff;
+            padding-left: 220px; /* Espaço para a barra lateral */
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        table {
+            margin: 20px auto; /* Centraliza a tabela */
+            border-collapse: collapse; /* Remove espaçamento entre bordas */
+            width: 100%;
+            max-width: 600px; /* Limita a largura da tabela */
+        }
+
+        th, td {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* Estilo para centralizar a imagem */
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 300px; /* Define a largura máxima da imagem */
+            height: auto; /* Mantém a proporção */
+        }
+
+        /* Estilos para a barra lateral fixa */
+        nav.sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav.sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav.sidebar ul li {
+            margin-bottom: 15px;
+        }
+
+        nav.sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        nav.sidebar ul li a:hover {
+            background-color: #ddd;
+        }
+
+        /* Responsividade para dispositivos móveis */
+        @media (max-width: 768px) {
+            body {
+                padding-left: 0;
+            }
+
+            nav.sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                box-shadow: none;
+            }
+
+            nav.sidebar ul {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            nav.sidebar ul li {
+                margin-bottom: 0;
+            }
+
+            table {
+                width: 100%; /* Tabela ocupa toda a largura da tela */
+            }
+
+            img {
+                max-width: 100%; /* Imagem ajusta para a largura da tela */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 24px;
+            }
+
+            td {
+                font-size: 14px; /* Texto da tabela fica menor */
+            }
+
+            nav.sidebar ul li a {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra lateral fixa com links -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="https://resistencehybe.tumblr.com">Notícias</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <h2>Contato</h2>
+
+    <section> 
+        <table> 
+            <tbody>
+                <tr>
+                    <td>E-mail: resistencebrasil@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Telefone: (xx) xxxx-xxxx</td>
+                </tr>
+                <tr>
+                    <td>Localização: Hybe Labels</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Imagem centralizada -->
+    <img src="cachorro.jpeg" alt="Imagem de um cachorro"> <!-- Imagem -->
+
+</body>
+</html>
